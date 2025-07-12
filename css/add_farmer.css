@@ -1,0 +1,115 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 120px auto 20px auto; /* pushes it below fixed header */
+  background-color: #eee;
+  padding: 30px; /* reduced top padding */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom:100px ;
+}
+
+.form-container h2,
+.form-container label:first-of-type {
+  margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+  color: darkgreen;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+#message {
+  text-align: center;
+  color: green;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.header {
+  position: fixed;
+  right:0;
+  top: 0;
+  width: 100%;
+ background: lightgreen ;
+  color: white;
+  margin-bottom: 20px; /* adds space after the header */
+
+
+  text-align: center;
+}
+
+.LOGO{
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-left: 30px;
+}
+
+.list{
+  float: right;
+  margin-right: 40px;
+}
+
+
+.list li{
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.list li a{
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.list li:hover{
+  border-bottom: 4px solid yellow;
+  transition: .3s;
+}

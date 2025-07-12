@@ -1,0 +1,132 @@
+/* General page setup */
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f9f2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header: logo + title */
+header {
+  height: 70px;
+  background: lightgreen;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-box img {
+  height: 70px;
+}
+
+.header-box h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: darkgreen;
+  margin-left: 20px;
+}
+
+/* Top navigation (separated from header) */
+.top-nav {
+  background-color: orange;
+  padding: 10px 0px;
+  width: 100%;
+  height: 60px;
+  border-radius: 0 0 10px 10px;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-right: 70px;
+}
+
+.top-nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Services section */
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 120px;
+  
+}
+
+.services-section h2 {
+  font-size: 36px;
+  color: green;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card i {
+  font-size: 50px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
