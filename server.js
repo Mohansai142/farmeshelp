@@ -1,10 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path'); // ✅ Required for path resolution
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// ✅ Serve static files from "public" folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Connect MongoDB
 mongoose.connect('mongodb+srv://dhanu:dhanu123456789@cluster0.mnih86n.mongodb.net/dairy?retryWrites=true&w=majority&appName=Cluster0', {
@@ -35,13 +39,12 @@ app.post('/api/farmer', async (req, res) => {
   }
 });
 
+// Optional: fallback route
 app.get('/', (req, res) => {
-  res.send('✅ Farmer Help API is Running!');
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // ✅ Show your form as homepage
 });
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
 });
-
