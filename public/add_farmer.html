@@ -55,7 +55,7 @@
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("http://localhost:3000/api/farmer", {
+      const response = await fetch("http://farmeshelp.onrender.com/api/farmer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
